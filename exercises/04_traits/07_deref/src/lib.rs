@@ -12,11 +12,12 @@ pub struct Ticket {
 
 impl Ticket {
     pub fn title(&self) -> &str {
-        todo!()
+        // leading and trailing whitespace should be removed
+        &self.title.trim()
     }
 
     pub fn description(&self) -> &str {
-        todo!()
+        &self.description.trim()
     }
 }
 
