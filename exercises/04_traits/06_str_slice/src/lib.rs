@@ -32,15 +32,18 @@ impl Ticket {
     }
 
     pub fn title(&self) -> &str {
-        &self.title.as_str()
+        // &String is derefed to &str
+        &self.title
     }
 
     pub fn description(&self) -> &str {
-        &self.description.as_str()
+        // &String is derefed to &str
+        &self.description
     }
 
     pub fn status(&self) -> &str {
-        &self.status.as_str()
+        // &String is derefed to &str
+        &self.status
     }
 }
 
